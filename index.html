@@ -1,32 +1,31 @@
-{
-  "name": "Paradise Restaurant",
-  "description": "Modern premium responsive website for Paradise Restaurant in Faisalabad, Pakistan, serving authentic Pakistani, BBQ, and Desi cuisine.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
-*
-# GEMINI_API_KEY: Required for Gemini AI API calls.
-# AI Studio automatically injects this at runtime from user secrets.
-# Users configure this via the Secrets panel in the AI Studio UI.
-GEMINI_API_KEY="MY_GEMINI_API_KEY"
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Paradise Restaurant Faisalabad | فردوس ریسٹورنٹ - Authentic Pakistani & BBQ</title>
+    
+    <!-- SEO & Social Sharing Meta Tags -->
+    <meta name="description" content="Official website for Paradise Restaurant in Faisalabad, Pakistan. Serving fresh Mutton Karahi, Chicken Malai Boti, BBQ Platters, Qandhari Naan & pure Desi Ghee delicacies." />
+    <meta name="keywords" content="Paradise Restaurant, Paradise Restaurant Faisalabad, Pakistani Food, BBQ Faisalabad, Mutton Karahi, Desi Food, Family Restaurant Faisalabad, فردوس ریسٹورنٹ" />
+    <meta name="theme-color" content="#0d1317" />
 
-# APP_URL: The URL where this applet is hosted.
-# AI Studio automatically injects this at runtime with the Cloud Run service URL.
-# Used for self-referential links, OAuth callbacks, and API endpoints.
-APP_URL="MY_APP_URL"
-node_modules/
-build/
-dist/node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+    <!-- Open Graph / WhatsApp / Facebook Link Preview Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Paradise Restaurant Faisalabad | فردوس ریسٹورنٹ" />
+    <meta property="og:description" content="Authentic Pakistani BBQ, Sizzling Karahis, and Family Dining in Faisalabad. View complete menu, rates, and book your table online." />
+    <meta property="og:image" content="/src/assets/images/pakistani_food_hero_1786464854875.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Paradise Restaurant Faisalabad | فردوس ریسٹورنٹ" />
+    <meta property="twitter:description" content="Authentic Pakistani BBQ, Sizzling Karahis, and Family Dining in Faisalabad." />
 
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+    <!-- Preconnect Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Noto+Nastaliq+Urdu:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0d1317] text-white antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
